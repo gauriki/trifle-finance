@@ -1,11 +1,11 @@
 import styles from "../styles/components/header.module.css";
 
-export function Header() {
+export function Header(p) {
   return (
     <header className="flex justify-between items-center">
       <div className="flex gap-10 items-center">
         <h1 className="text-white font-semibold text-[24px] leading-[24px]">
-          PROFILE
+          {p.name}
         </h1>
         <div className="w-[443px] h-[38px] bg-[#1E1E1E] flex items-center rounded-md p-[4px] pl-4">
           <input
